@@ -1,4 +1,4 @@
-package com.nilgil.study.algorithm.problem.graph.baekjoon;
+package com.nilgil.study.algorithm.graph.problem;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
  * <br>+ 녹은 빙산 정리
  * <br>+ DFS 분리 덩어리 존재 여부 확인
  */
-public class Q2573 {
+public class BJ2573 {
 
     static int[] dX = {-1, 1, 0, 0};
     static int[] dY = {0, 0, -1, 1};
@@ -114,16 +114,16 @@ public class Q2573 {
             }
         }
     }
-}
 
-class Iceberg {
-    int x;
-    int y;
-    int z;
+    private static class Iceberg {
+        int x;
+        int y;
+        int z;
 
-    public Iceberg(int x, int y, int z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+        public Iceberg(int x, int y, int z) {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
     }
 }

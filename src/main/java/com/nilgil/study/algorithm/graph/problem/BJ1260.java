@@ -1,4 +1,4 @@
-package com.nilgil.study.algorithm.problem.graph.baekjoon;
+package com.nilgil.study.algorithm.graph.problem;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 /**
  * DFS, BFS
  */
-public class Q1260_O {
+public class BJ1260 {
 
     static BufferedReader br;
     static StringTokenizer st;

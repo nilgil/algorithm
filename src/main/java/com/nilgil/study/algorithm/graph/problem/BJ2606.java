@@ -1,4 +1,4 @@
-package com.nilgil.study.algorithm.problem.graph.baekjoon;
+package com.nilgil.study.algorithm.graph.problem;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
  *<br> - 간선의 방향성과 가중치는 없다.
  *<br> - 1번 노드와 연결된 모든 노드의 수를 구해라.
  */
-public class Q2606 {
+public class BJ2606 {
 
     static int n, m, count = 0;
     static boolean[][] graph;
