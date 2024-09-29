@@ -1,10 +1,12 @@
 package com.nilgil.study.algorithm.graph;
 
-import com.nilgil.study.algorithm.support.PrintUtils;
+import support.PrintUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.StringTokenizer;
 
 /*
@@ -13,7 +15,7 @@ import java.util.StringTokenizer;
 2 3
 3 1
  */
-public class GraphToMatrix {
+public class GraphToList {
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -22,15 +24,17 @@ public class GraphToMatrix {
         int nodeCount = Integer.parseInt(st.nextToken());
         int edgeCount = Integer.parseInt(st.nextToken());
 
-        int[][] matrix = new int[nodeCount + 1][nodeCount + 1];
+        List<Integer>[] graph = new ArrayList[nodeCount + 1];
+        for (int i = 1; i <= nodeCount; i++) {
+            graph[i] = new ArrayList<>();
+        }
 
         while (edgeCount-- > 0) {
             st = new StringTokenizer(reader.readLine());
             int from = Integer.parseInt(st.nextToken());
             int to = Integer.parseInt(st.nextToken());
-            matrix[from][to] = 1;
+            graph[from].add(to);
         }
-
-        PrintUtils.printIntMatrix(matrix);
+        PrintUtils.printListArray(graph);
     }
 }

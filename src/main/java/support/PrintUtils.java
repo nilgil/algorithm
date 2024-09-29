@@ -1,4 +1,4 @@
-package com.nilgil.study.algorithm.support;
+package support;
 
 import java.util.List;
 

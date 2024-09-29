@@ -1,11 +1,11 @@
-package com.nilgil.study.algorithm.recursion.problem;
+package recursion.problem;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class BJ15657 {
+public class BJ15656 {
 
     static int n, m;
     static int[] nums;
@@ -28,13 +28,13 @@ public class BJ15657 {
         }
         Arrays.sort(nums);
 
-        perm(0, 0);
+        perm(0);
         System.out.println(sb);
     }
 
     static StringBuilder sb = new StringBuilder();
 
-    static void perm(int depth, int start) {
+    static void perm(int depth) {
         // base case
         if (depth == m) {
             for (int i = 0; i < m; i++) {
@@ -45,9 +45,9 @@ public class BJ15657 {
         }
 
         // recursive case
-        for (int i = start; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             output[depth] = nums[i];
-            perm(depth + 1, i);
+            perm(depth + 1);
         }
     }
 }

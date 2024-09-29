@@ -1,4 +1,4 @@
-package com.nilgil.study.algorithm.recursion.problem;
+package recursion.problem;
 
 import java.io.BufferedReader;
 import java.io.IOException;

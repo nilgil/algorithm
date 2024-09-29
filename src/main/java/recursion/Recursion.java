@@ -1,4 +1,4 @@
-package com.nilgil.study.algorithm.recursion;
+package recursion;
 
 public class Recursion {
 
