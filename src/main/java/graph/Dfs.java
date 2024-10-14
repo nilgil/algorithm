@@ -1,4 +1,4 @@
-package com.nilgil.study.algorithm.graph;
+package graph;
 
 import java.util.Stack;
 
