@@ -7,14 +7,14 @@ public class Main {
 
     static StringBuilder sb = new StringBuilder();
 
-    private static void input() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-
-    }
-
     public static void main(String[] args) throws Exception {
         input();
 
     }
+
+	private static void input() throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+
+	}
 }
